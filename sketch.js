@@ -65,17 +65,17 @@ function draw()
         
     // Draw all targets
 	for (var i = 0; i < legendas.getRowCount(); i++) {
-      if (i <= 25) { targets[i].draw(155, 0, 0); }
-      else if (i <= 36) { targets[i].draw(255, 165, 0); }
-      else if (i <= 39) { targets[i].draw(200, 200, 0); }
-      else if (i <= 48) { targets[i].draw(0, 155, 0); }
-      else if (i <= 49) { targets[i].draw(0, 100, 0); }
-      else if (i <= 50) { targets[i].draw(0, 0, 180); }
-      else if (i <= 54) { targets[i].draw(90, 90, 230); }
+      if (i <= 26) { targets[i].draw(155, 0, 0); }
+      else if (i <= 37) { targets[i].draw(255, 165, 0); }
+      else if (i <= 40) { targets[i].draw(200, 200, 0); }
+      else if (i <= 49) { targets[i].draw(0, 155, 0); }
+      else if (i <= 50) { targets[i].draw(0, 100, 0); }
+      else if (i <= 51) { targets[i].draw(0, 0, 180); }
+      else if (i <= 55) { targets[i].draw(90, 90, 230); }
       else if (i <= 68) { targets[i].draw(126, 90, 155); }
       else if (i <= 78) { targets[i].draw(238, 130, 238); }
       else if (i <= 79) { targets[i].draw(150, 120, 210); }
-      
+
     } 
     
     // Draws the target label to be selected in the current trial. We include 
@@ -222,6 +222,7 @@ function createTargets(target_size, horizontal_gap, vertical_gap)
   for (var r = 0; r < GRID_ROWS; r++) {
     
     for (var c = 0; c < GRID_COLUMNS; c++) {
+      
       let target_x = 40 + (h_margin + target_size) * c + target_size/2; // give it some margin from the left border
       let target_y = (v_margin + target_size) * r + target_size/2;
       
@@ -275,3 +276,4 @@ function windowResized()
     draw_targets = true;
   }
 }
+
