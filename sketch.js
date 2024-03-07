@@ -62,7 +62,40 @@ function draw()
     fill(color(255,255,255));
     textAlign(LEFT);
     text("Trial " + (current_trial + 1) + " of " + trials.length, 50, 20);
-        
+      
+    // Print Sections Informations
+    textFont("Arial", 30);
+    textStyle(BOLD);
+    fill(color(155,0,0));
+    textAlign(LEFT);
+    text("A", 30, 160);
+    
+    fill(color(255, 165, 0));
+    text("E", 30, 275);
+    
+    fill(color(200, 200, 0));
+    text("H", 30, 350);
+    
+    fill(color(0, 155, 0));
+    text("I", 35, 400);
+    
+    fill(color(0, 100, 0));
+    text("L", 10, 475);
+    fill(color(0, 0, 180));
+    text("N", 35, 475);
+    fill(color(90, 90, 230));
+    text("O", 60, 475);
+    
+    fill(color(126, 90, 155));
+    text("R", 30, 525);
+      
+    fill(color(238, 130, 238));
+    text("U", 30, 600);
+    
+    fill(color(150, 120, 210));
+    text("Y", 30, 645);
+    
+    
     // Draw all targets
 	for (var i = 0; i < legendas.getRowCount(); i++) {
       if (i <= 26) { targets[i].draw(155, 0, 0); }
